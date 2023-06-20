@@ -1,0 +1,9 @@
+GET http://localhost:5000/income
+
+### 
+POST http://localhost:5000/income 
+Content-Type: application/json
+
+{
+"income_name": "FreeLance", "income_amount": 3000000 , "income_description": "Monthly Payment", "income_source": "Employer from boss", "income_date": "2023-05-20"
+}

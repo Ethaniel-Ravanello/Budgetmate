@@ -1,15 +1,15 @@
 import { Sequelize } from "sequelize";
 import db from "../config/Database.js";
 
-const { Datatypes } = Sequelize;
+const { DataTypes } = Sequelize;
 
 const Expenses = db.define(
   "expenses",
   {
-    expenses_name: Datatypes.STRING,
-    expenses_amount: Datatypes.FLOAT,
-    expenses_description: Datatypes.STRING,
-    expenses_date: Datatypes.DATE,
+    expenses_name: DataTypes.STRING,
+    expenses_amount: DataTypes.FLOAT,
+    expenses_description: DataTypes.STRING,
+    expenses_date: DataTypes.DATE,
   },
   {
     freezeTableName: true,
